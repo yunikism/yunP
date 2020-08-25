@@ -1,7 +1,6 @@
 package com.yun.controller;
 
 import com.yun.model.admin;
-import com.yun.dao.AdminDao;
 import com.yun.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,8 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 //@RequestMapping("/home")
 public class AdminController {
 
-    @Autowired
-    private AdminDao adminDao;
     @Autowired
     private AdminService adminService;
 
