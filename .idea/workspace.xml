@@ -7,17 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367e86e1-c82d-4158-9488-44cf80a2e1f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/rest-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/web/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/yunP-1.0-SNAPSHOT/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/yunP-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yunP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/yunP.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,11 +157,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -198,6 +185,8 @@
       <workItem from="1598322085496" duration="3719000" />
       <workItem from="1598330472244" duration="1231000" />
       <workItem from="1598331838866" duration="5553000" />
+      <workItem from="1598338111497" duration="1495000" />
+      <workItem from="1598341215753" duration="42000" />
     </task>
     <servers />
   </component>
@@ -339,28 +328,28 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1621" height="346" key="GridCell.Tab.31.right/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598309617997" />
-    <state x="-1573" y="191" key="SettingsEditor" timestamp="1598337998339">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state x="347" y="191" key="SettingsEditor" timestamp="1598341250798">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1573" y="191" key="SettingsEditor/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598337998339" />
-    <state x="347" y="191" key="SettingsEditor/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598332700925" />
+    <state x="347" y="191" key="SettingsEditor/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598341250798" />
     <state x="649" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1597809799653">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="649" y="366" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1597809799653" />
-    <state x="-1276" y="272" width="613" height="538" key="find.popup" timestamp="1598338039130">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state x="644" y="272" width="613" height="538" key="find.popup" timestamp="1598341292478">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1276" y="272" width="613" height="538" key="find.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598338039130" />
-    <state x="644" y="272" width="613" height="538" key="find.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598330945104" />
+    <state x="644" y="272" width="613" height="538" key="find.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598341292478" />
     <state x="346" y="196" key="new project wizard" timestamp="1597879815308">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="346" y="196" key="new project wizard/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1597879815308" />
-    <state x="-1372" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1598337668053">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state x="548" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1598341235753">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1372" y="233" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598337668053" />
-    <state x="548" y="233" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598332453271" />
+    <state x="548" y="233" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1050/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598341235753" />
   </component>
 </project>
