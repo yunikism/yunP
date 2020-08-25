@@ -11,17 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-@Controller
+
 //@RequestMapping("/home")
+@Controller
 public class AdminController {
 
     @Autowired
     private AdminService adminService;
 
-    @GetMapping("/ap/test")
-    public @ResponseBody String homeTest(){
-        return "home";
-    }
 
     @RequestMapping(value  = "/home")
     public String home(ModelMap modelmap) {

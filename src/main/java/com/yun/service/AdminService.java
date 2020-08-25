@@ -16,6 +16,7 @@ public class AdminService {
     private AdminDao adminDao;
 
     public admin getAdminInfo(String admin_nm) {
+        System.out.println("admin_nm : " + admin_nm);
         return adminDao.getAdminInfo(admin_nm);
     }
 
