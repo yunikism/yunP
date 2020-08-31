@@ -20,16 +20,16 @@
   </body>
 </html>
 
-<%--<script>--%>
+<script>
 
-<%--  $(document).ready(function() {--%>
-<%--    alert('<%=referrer%>');--%>
-<%--    goApp();--%>
-<%--  });--%>
-<%--  function goApp(){--%>
-<%--    location.href='<%=url%>';--%>
-<%--  }--%>
+  $(document).ready(function() {
+    alert('<%=referrer%>');
+    goApp();
+  });
+  function goApp(){
+    location.href='<%=url%>';
+  }
 
-<%--</script>--%>
+</script>
 
-<%--<c:redirect url="<%=url%>"/>--%>
+<c:redirect url="<%=url%>"/>
