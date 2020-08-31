@@ -5,7 +5,11 @@
 <mapper namespace="admin">
 
     <select id="getAdminList" parameterType="String" resultType="com.yun.model.admin">
-        select *
+        select admin_no
+        ,admin_id
+        ,admin_nm
+        ,admin_div
+        ,admin_memo
         from yun.tb_admin
         where 1=1
         and admin_nm = #{admin_nm}
