@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>yunikism.com</title>
+  <script data-ad-client="ca-pub-6056528810711682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 <img src="${pageContext.request.contextPath}/img/yunikismCom.png" style="height: 150px ; width: 400px"/>
