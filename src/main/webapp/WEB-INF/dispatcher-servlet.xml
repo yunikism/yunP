@@ -22,7 +22,7 @@
 <!--    <mvc:default-servlet-handler />-->
 <!--    <mvc:resources mapping="/web/**" location="/web/" />-->
 
-    <mvc:annotation-driven />
+<!--    <mvc:annotation-driven />-->
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
