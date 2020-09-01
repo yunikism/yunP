@@ -35,14 +35,14 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener
         </listener-class>
     </listener>
-    <!--    <listener>-->
-    <!--        <listener-class>org.springframework.web.util.IntrospectorCleanupListener-->
-    <!--        </listener-class>-->
-    <!--    </listener>-->
-    <!--    <listener>-->
-    <!--        <listener-class>org.springframework.web.context.request.RequestContextListener-->
-    <!--        </listener-class>-->
-    <!--    </listener>-->
+<!--    <listener>-->
+<!--        <listener-class>org.springframework.web.util.IntrospectorCleanupListener-->
+<!--        </listener-class>-->
+<!--    </listener>-->
+<!--    <listener>-->
+<!--        <listener-class>org.springframework.web.context.request.RequestContextListener-->
+<!--        </listener-class>-->
+<!--    </listener>-->
 
     <!-- dispatcher config -->
     <servlet>
@@ -56,7 +56,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
 </web-app>

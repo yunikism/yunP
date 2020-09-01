@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="admin">
 
-    <select id="getAdminList" parameterType="String" resultType="com.yun.model.admin">
+    <select id="getAdminList" parameterType="String" resultType="com.yun.test.model.admin">
         select admin_no
         ,admin_id
         ,admin_nm

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+	<tiles-definitions>
+
+		<definition name="nothing/*/*" extends="nothingLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="nothing/*/*/*" extends="nothingLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="ajax/*/*" extends="ajaxLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+		</definition>		
+		
+		<definition name="ajax/*/*/*" extends="ajaxLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="ajaxHtml/*/*" extends="ajaxLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="ajaxHtml/*/*/*" extends="ajaxLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="*/popup/*" extends="nothingLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/popup/{2}.jsp"></put-attribute>
+		</definition>
+
+        <definition name="*/f/*" extends="frontLayout">
+            <put-attribute name="body" value="/WEB-INF/view/{1}/f/{2}.jsp"></put-attribute>
+        </definition>
+
+        <definition name="*/share/*" extends="nothingLayout">
+            <put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+        </definition>
+
+		<definition name="*" extends="defaultLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="*/*" extends="defaultLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+		</definition>
+
+		<definition name="*/*/*" extends="defaultLayout">
+			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+		</definition>
+
+	</tiles-definitions>

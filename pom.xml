@@ -18,6 +18,8 @@
         <servlet.version>3.1.0</servlet.version>
         <jsp.version>2.2</jsp.version>
 
+        <tiles.version>3.0.8</tiles.version>
+
     </properties>
 
     <dependencies>
@@ -205,6 +207,43 @@
         </dependency>
 
 
+        <!-- tiles -->
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-core</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-api</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-template</artifactId>
+            <version>${tiles.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tiles</groupId>
+            <artifactId>tiles-jsp</artifactId>
+            <version>${tiles.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-nop</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
         <!-- for test -->
         <dependency>
             <groupId>junit</groupId>
@@ -212,7 +251,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
 
     </dependencies>
 <!--    <build>-->

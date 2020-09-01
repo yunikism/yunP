@@ -41,6 +41,17 @@
           <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.47" />
           <element id="library" level="project" name="Maven: org.lazyluke:log4jdbc-remix:0.2.7" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-core:3.0.8" />
+          <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.0" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-api:3.0.8" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-api:1.0.7" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-template:3.0.8" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-autotag-core-runtime:1.2" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-jsp:3.0.8" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-servlet:3.0.8" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-servlet:1.0.7" />
+          <element id="library" level="project" name="Maven: org.apache.tiles:tiles-request-jsp:1.0.7" />
         </element>
       </element>
       <element id="directory" name="META-INF">
