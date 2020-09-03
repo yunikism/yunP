@@ -16,8 +16,7 @@ fn_admin_init = function(){
  *
  */
 fn_test_move = function(){
-    alert("ㅎㅇ");
-    location.href = "/test.do";
+    location.href = "/test/test.do";
 };
 
 

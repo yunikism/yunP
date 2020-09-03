@@ -4,52 +4,73 @@
 
 	<tiles-definitions>
 
+	<!-- Layout 미적용 템플릿 -->
+	<definition name="nothingLayout" template="/WEB-INF/views/layout/template/nothingLayout.jsp">
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+
+	<!-- default Layout  템플릿 -->
+	<definition name="defaultLayout" template="/WEB-INF/views/layout/template/defaultLayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/layout/header/defaultHeader.jsp"></put-attribute>
+		<put-attribute name="left" value="/WEB-INF/views/layout/left/defaultLeft.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer/defaultFooter.jsp"></put-attribute>
+	</definition>
+
+<!--	&lt;!&ndash; 상품 Layout  템플릿 &ndash;&gt;-->
+<!--	<definition name="viewLayout" template="/WEB-INF/view/layout/template/defaultLayout.jsp">-->
+<!--		<put-attribute name="header" value="/WEB-INF/view/layout/header/defaultHeader.jsp"></put-attribute>-->
+<!--		<put-attribute name="left" value="/WEB-INF/view/layout/left/defaultLeft.jsp"></put-attribute>-->
+<!--		<put-attribute name="body" value=""></put-attribute>-->
+<!--		<put-attribute name="footer" value="/WEB-INF/view/layout/footer/defaultFooter.jsp"></put-attribute>-->
+<!--	</definition>-->
+
 		<definition name="nothing/*/*" extends="nothingLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="nothing/*/*/*" extends="nothingLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="ajax/*/*" extends="ajaxLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
 		</definition>		
 		
 		<definition name="ajax/*/*/*" extends="ajaxLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="ajaxHtml/*/*" extends="ajaxLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="ajaxHtml/*/*/*" extends="ajaxLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="*/popup/*" extends="nothingLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/popup/{2}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/popup/{2}.jsp"></put-attribute>
 		</definition>
 
         <definition name="*/f/*" extends="frontLayout">
-            <put-attribute name="body" value="/WEB-INF/view/{1}/f/{2}.jsp"></put-attribute>
+            <put-attribute name="body" value="/WEB-INF/views/{1}/f/{2}.jsp"></put-attribute>
         </definition>
 
         <definition name="*/share/*" extends="nothingLayout">
-            <put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+            <put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
         </definition>
 
 		<definition name="*" extends="defaultLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="*/*" extends="defaultLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
 		</definition>
 
 		<definition name="*/*/*" extends="defaultLayout">
-			<put-attribute name="body" value="/WEB-INF/view/{1}/{2}/{3}.jsp"></put-attribute>
+			<put-attribute name="body" value="/WEB-INF/views/{1}/{2}/{3}.jsp"></put-attribute>
 		</definition>
 
 	</tiles-definitions>

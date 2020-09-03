@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="visitor">
+
+    <insert id="insertVisitor" parameterType="java.util.Map">
+        INSERT INTO yun.tb_visitor
+        (
+	        visitor_nm,
+	        visitor_content,
+	        visitor_password,
+	        visitor_hidden_yn
+        )
+        VALUES
+        (
+         #{visitor_nm}
+        , #{visitor_content}
+        , #{visitor_password}
+        , #{visitor_hidden_yn}
+        );
+    </insert>
+
+</mapper>

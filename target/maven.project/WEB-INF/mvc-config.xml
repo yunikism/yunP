@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+						http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+						http://www.springframework.org/schema/task
+                    http://www.springframework.org/schema/task/spring-task.xsd
+                    ">
+
+
+    <!-- The controllers are autodetected POJOs labeled without the @Controller
+    annotation . -->
+    <context:component-scan base-package="com.yun"
+                            use-default-filters="false">
+        <context:include-filter expression="org.springframework.stereotype.Controller"
+                                type="annotation"/>
+    </context:component-scan>
+
+    <mvc:resources mapping="/web/**" location="/web/" />
+
+    <task:annotation-driven/>
+
+<!--    <mvc:annotation-driven>-->
+<!--        <mvc:argument-resolvers>-->
+<!--            <bean class="org.springframework.mobile.device.DeviceWebArgumentResolver"/>-->
+<!--        </mvc:argument-resolvers>-->
+<!--    </mvc:annotation-driven>-->
+
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="false">
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"
+                  id="jacksonMessageConverter">
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+<!--    &lt;!&ndash; 컨트롤러단에서 세션의 정보들에 접근을 위한 설정 &ndash;&gt;-->
+<!--    <mvc:annotation-driven>-->
+<!--        <mvc:argument-resolvers>-->
+<!--            <bean class="org.springframework.security.web.method.annotation.AuthenticationPrincipalArgumentResolver"/>-->
+<!--        </mvc:argument-resolvers>-->
+<!--    </mvc:annotation-driven>-->
+
+<!--    <security:global-method-security-->
+<!--            secured-annotations="enabled"-->
+<!--            pre-post-annotations="enabled"-->
+<!--            proxy-target-class="true"-->
+<!--    />-->
+
+    <!-- ExceptionResolver Definition -->
+<!--    <bean id="exceptionResolver" class="com.yun.common.custom.exception.ExceptionResolver"/>-->
+
+    <!--
+    <bean id="downloadView" class="com.cusolution.skinplus.util.DownloadView" />
+      -->
+    <!-- Enable this for integration of file upload functionality xxs 필터적용시 사용
+    <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="filterMultipartResolver "/>
+    -->
+<!--    <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver"/>-->
+
+<!--    <mvc:interceptors>-->
+<!--        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor"-->
+<!--              p:paramName="languageCode"/>-->
+<!--        <ref bean="deviceResolverHandlerInterceptor"/>-->
+<!--    </mvc:interceptors>-->
+
+<!--    <bean id="deviceResolverHandlerInterceptor"-->
+<!--          class="org.springframework.mobile.device.DeviceResolverHandlerInterceptor"/>-->
+
+    <!-- Store preferred language configuration in a cookie -->
+    <bean class="org.springframework.web.servlet.i18n.CookieLocaleResolver"
+          id="localeResolver" p:cookieName="locale"/>
+
+    <!-- Resolves localized <theme_name>.properties files in the classpath to
+        allow for theme support -->
+    <bean
+            class="org.springframework.ui.context.support.ResourceBundleThemeSource"
+            id="themeSource"/>
+
+
+    <!-- Store preferred theme configuration in a cookie -->
+    <bean class="org.springframework.web.servlet.theme.CookieThemeResolver"
+          id="themeResolver" p:cookieName="theme" p:defaultThemeName="standard"/>
+
+
+    <!-- For Tiles Tag -->
+    <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0"/>
+    <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" id="viewResolver"
+          p:viewClass="org.springframework.web.servlet.view.tiles3.TilesView"
+          p:order="1"/>
+    <bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer" id="tilesConfigurer"
+          p:definitions="classpath:config/tiles.xml"/>
+    <!-- /For Tiles Tag -->
+
+
+    <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView" id="jsonView">
+        <property name="contentType" value="application/json;charset=UTF-8"/>
+        <property name="objectMapper">
+            <bean class="com.yun.common.util.CustomObjectMapper"/>
+        </property>
+    </bean>
+
+    <!-- JSON VIEW의 contentType이 text/html인 것을 추가 -->
+    <bean id="textView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"
+          p:contentType="text/html;charset=UTF-8"/>
+
+
+
+</beans>

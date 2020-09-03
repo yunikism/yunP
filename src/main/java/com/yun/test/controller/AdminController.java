@@ -16,7 +16,7 @@ public class AdminController {
     private AdminService adminService;
 
 
-    @RequestMapping(value  = "/home.do")
+    @RequestMapping(value  = "/home/home.do")
     public String home(ModelMap modelmap) {
         modelmap.addAttribute("author","codingTest");
         String admin_nm = "이굥의";
@@ -31,7 +31,7 @@ public class AdminController {
         return "home/home";
     }
 
-    @RequestMapping(value  = "/test.do")
+    @RequestMapping(value  = "/test/test.do")
     public String testMove(ModelMap modelmap) {
 
         String admin_nm = "이굥의";
