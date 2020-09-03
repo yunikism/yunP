@@ -6,5 +6,5 @@
 
 <script type="text/javascript" src="/web/js/views/home/home.js"></script>
 <!DOCTYPE html>
-<img src="${pageContext.request.contextPath}/web/img/jeJu1.jpg"/>
+<img src="${pageContext.request.contextPath}/web/img/loVe.jpg"/>
 <%--<h1>${memo}</h1>--%>

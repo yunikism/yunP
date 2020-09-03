@@ -40,6 +40,12 @@ public class TravelController {
         return "travel/jeju";
     }
 
+    @RequestMapping(value  = "/travel/love.do")
+    public String moveLove(ModelMap modelmap) {
+
+        return "travel/love";
+    }
+
 
 
 }

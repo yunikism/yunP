@@ -11,6 +11,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 
@@ -25,6 +27,18 @@ public class VisitorController {
     public String moveVisitorWrite(ModelMap modelmap) {
 
         return "visitor/visitorWrite";
+    }
+
+    @RequestMapping(value  = "/visitor/visitorList.do")
+    public String moveVisitorList(HttpServletRequest request, Model model) {
+        Map param = CommonUtils.getParameterMap(request);
+        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+
+        list = visitorService.selectVisitorList(param);
+
+        model.addAttribute("records", list);
+
+        return "visitor/visitorList";
     }
 
     @RequestMapping(value  = "/visitor/insertVisitor.do")

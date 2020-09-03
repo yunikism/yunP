@@ -17,7 +17,10 @@
 	<a class="nav-link" href="/travel/jeju.do">jeju</a>
 </li>
 <li class="nav-item">
-	<a class="nav-link" href="/visitor/visitorWrite.do">visitor</a>
+	<a class="nav-link" href="/travel/love.do">♡♡</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link" href="/visitor/visitorList.do">visitor</a>
 </li>
 <%--<li class="nav-item dropdown">--%>
 <%--	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>--%>

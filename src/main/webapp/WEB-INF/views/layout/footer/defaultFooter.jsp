@@ -10,7 +10,26 @@
             </div>
         </div>
     </div>
-</div><%--
+    </div>
+</div>
+
+
+<style>
+
+    #footer {
+        border-top: 1px solid #DDD;
+        padding-top: 3em;
+        margin: 5em 0 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0.9;
+    }
+
+    #footer .address{ color:#999999; font-size:12px; }
+
+</style>
+
+<%--
 </div>
 <!-- /#page-wrapper -->
 </div>

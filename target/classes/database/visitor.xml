@@ -4,6 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="visitor">
 
+
+    <select id="selectVisitorList" parameterType="java.util.Map" resultType="java.util.Map">
+        SELECT *
+        FROM yun.tb_visitor
+        where 1=1
+        and visitor_hidden_yn = 'N'
+        order by visitor_no
+    </select>
+
     <insert id="insertVisitor" parameterType="java.util.Map">
         INSERT INTO yun.tb_visitor
         (

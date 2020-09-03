@@ -5,6 +5,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -20,6 +21,10 @@ public class VisitorDao {
 
     public admin insertVisitor(Map<String,Object> param){
         return sqlSession.selectOne("visitor.insertVisitor",param);
+    }
+
+    public List<Map<String, Object>> selectVisitorList(Map param){
+        return sqlSession.selectList("visitor.selectVisitorList",param);
     }
 
 }

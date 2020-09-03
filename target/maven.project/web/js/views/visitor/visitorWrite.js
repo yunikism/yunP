@@ -24,13 +24,14 @@ fn_visitor_write = function(){
         ,visitor_hidden_yn : $("input:radio[name=visitor_hidden_yn]:checked").val()
     };
     if(confirm("저장 하시겠습니까?")) {
+
         $.ajax({
             url: "/visitor/insertVisitor.do",
             data: param,
             type: 'POST',
             success: function (data) {
                 alert("저장성~공!.");
-                location.href = "/home/home.do";
+                location.href = "/visitor/visitorList.do";
             },
             error: function (error) {
                 alert("관리자에게 문의");

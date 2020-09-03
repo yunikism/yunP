@@ -8,4 +8,3 @@
 <!DOCTYPE html>
 <img src="${pageContext.request.contextPath}/web/img/okiNawa1.jpg"/>
 <%--<h1>${memo}</h1>--%>
-

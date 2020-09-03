@@ -30,11 +30,11 @@
         <fieldset class="form-group">
             <legend>공개 여부</legend>
             <div class="custom-control custom-radio">
-                <input type="radio"  name="visitor_hidden_yn" id = "hi" class="custom-control-input" value="Y" checked="">
+                <input type="radio"  name="visitor_hidden_yn" id = "hi" class="custom-control-input" value="N" >
                 <label class="custom-control-label" for="hi" >공개</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="radio"  name="visitor_hidden_yn" id = "hi1" class="custom-control-input" value="N">
+                <input type="radio"  name="visitor_hidden_yn" id = "hi1" class="custom-control-input" value="Y" checked="">
                 <label class="custom-control-label" for="hi1">비공개</label>
             </div>
         </fieldset>
