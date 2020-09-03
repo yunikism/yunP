@@ -13,6 +13,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <%--    <meta id="myViewport" name="viewport" content="width=480,target-densitydpi=device-dpi,user-scalable=yes"/>--%>
     <link type="text/css" href="${pageContext.request.contextPath}/web/ample/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <script data-ad-client="ca-pub-6056528810711682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
