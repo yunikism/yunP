@@ -132,27 +132,38 @@ fn_lotto_cal = function(){
 
 function fn_layer_popup(prize){
 
-    if(prize==1){
-        $("#popup_layer").text($("#prizeNo0").val());
-    }else if(prize==2){
-        $("#popup_layer").text($("#prizeNo1").val());
-    }else if(prize==3){
-        $("#popup_layer").text($("#prizeNo2").val());
-    }else if(prize==4){
-        $("#popup_layer").text($("#prizeNo3").val());
-    }else if(prize==5){
-        $("#popup_layer").text($("#prizeNo4").val());
+    var pop =$("#poppop").val();
+
+    if(pop=="N"){
+        if(prize==1){
+            $("#popup_layer").text($("#prizeNo0").val());
+        }else if(prize==2){
+            $("#popup_layer").text($("#prizeNo1").val());
+        }else if(prize==3){
+            $("#popup_layer").text($("#prizeNo2").val());
+        }else if(prize==4){
+            $("#popup_layer").text($("#prizeNo3").val());
+        }else if(prize==5){
+            $("#popup_layer").text($("#prizeNo4").val());
+        }
+
+        var _x = event.clientX + document.body.scrollLeft;
+        var _y = event.clientY + document.body.scrollTop;
+        var layer = document.getElementById("popup_layer");
+
+        if(_x < 0) _x = 0;
+        if(_y < 0) _y = 0;
+
+        layer.style.left = _x+"px";
+        layer.style.top = _y+"px";
+
+        $("#poppop").val("Y");
+
+        layer.style.visibility="visible";
+    }else{
+
+        $("#poppop").val("N");
+        var layer = document.getElementById("popup_layer");
+        layer.style.visibility="hidden";
     }
-
-    var _x = event.clientX + document.body.scrollLeft;
-    var _y = event.clientY + document.body.scrollTop;
-    var layer = document.getElementById("popup_layer");
-
-    if(_x < 0) _x = 0;
-    if(_y < 0) _y = 0;
-
-    layer.style.left = _x+"px";
-    layer.style.top = _y+"px";
-
-    layer.style.visibility="visible";
 }

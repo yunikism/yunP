@@ -89,7 +89,7 @@ public class AdminController {
         }
         String resultStr = response.toString();
 
-        System.out.println("resultStr : " + resultStr);
+//        System.out.println("resultStr : " + resultStr);
 
         JSONParser parser = new JSONParser();
         JSONObject resultJson = (JSONObject) parser.parse(resultStr);
@@ -159,7 +159,7 @@ public class AdminController {
     public String lottoBuy(HttpServletRequest request, Model model) {
 
         Map param = CommonUtils.getParameterMap(request);
-        System.out.println("param : " + param);
+//        System.out.println("param : " + param);
 
         int cnt = (int) param.get("cnt");
         String bnusNo = param.get("bnusNo").toString();
@@ -187,7 +187,7 @@ public class AdminController {
             for (int j = 0; j < 6; j++) { //numbers의 앞 6개 숫자를 가져옴
                 picked[j] = numbers.get(j).toString();
             }
-            System.out.println("picked " + picked[0] + ", "+ picked[1] + ", "+ picked[2] + ", " + picked[3] + ", "+ picked[4] + ", "+ picked[5]);
+//            System.out.println("picked " + picked[0] + ", "+ picked[1] + ", "+ picked[2] + ", " + picked[3] + ", "+ picked[4] + ", "+ picked[5]);
             int cont = 0;
             String second = "N";
             for (int x = 0; x < 6; x++) {
@@ -252,8 +252,8 @@ public class AdminController {
         model.addAttribute("prizeNo",prizeNo);
         model.addAttribute("status","success");
 
-        System.out.println("1등 당첨 : " + prize[0] + " 회" + "\n2등 당첨 : " + prize[1] + " 회" + "\n3등 당첨 : " + prize[2] + " 회" + "\n4등 당첨 : " + prize[3] + " 회" + "\n5등 당첨 : " + prize[4] + " 회");
-        System.out.println("1등 당첨 : " + prizeNo[0] + "\n2등 당첨 : " + prizeNo[1] + "\n3등 당첨 : " + prizeNo[2]  + "\n4등 당첨 : " + prizeNo[3]  + "\n5등 당첨 : " + prizeNo[4]);
+//        System.out.println("1등 당첨 : " + prize[0] + " 회" + "\n2등 당첨 : " + prize[1] + " 회" + "\n3등 당첨 : " + prize[2] + " 회" + "\n4등 당첨 : " + prize[3] + " 회" + "\n5등 당첨 : " + prize[4] + " 회");
+//        System.out.println("1등 당첨 : " + prizeNo[0] + "\n2등 당첨 : " + prizeNo[1] + "\n3등 당첨 : " + prizeNo[2]  + "\n4등 당첨 : " + prizeNo[3]  + "\n5등 당첨 : " + prizeNo[4]);
 
         return "ajaxHtml/home/homeAjax";
     }
@@ -293,7 +293,7 @@ public class AdminController {
         }
         String resultStr = response.toString();
 
-        System.out.println("resultStr : " + resultStr);
+//        System.out.println("resultStr : " + resultStr);
 
         JSONParser parser = new JSONParser();
         JSONObject resultJson = (JSONObject) parser.parse(resultStr);

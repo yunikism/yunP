@@ -13,6 +13,7 @@
         <input type="hidden" id="prizeNo2" name="prizeNo2" value="${prizeNo[2]}">
         <input type="hidden" id="prizeNo3" name="prizeNo3" value="${prizeNo[3]}">
         <input type="hidden" id="prizeNo4" name="prizeNo4" value="${prizeNo[4]}">
+        <input type="hidden" id="poppop" name="poppop" value="N">
         <table class="table table-hover" style="text-align: center;">
             <thead>
             <tr>
@@ -58,6 +59,13 @@
     </div>
 </div>
 
-    <div class="card border-primary mb-3" id="popup_layer" style="background-color:white;position:absolute; top:100px; left:100px;width:140px;height:auto; overflow:auto">
+    <div id="popup_layer" style="position:absolute;  top:100px; left:100px;
+width:140px;height:auto;z-index:1;visibility:hidden;background-color:white; border-style:dashed">
 <%--       <input type="textarea" id="popInput" value="">--%>
     </div>
+
+<%--<div class="card border-primary mb-3" id="popup_layer" style="background-color:white;position:absolute;visibility:hidden; top:100px; left:100px;width:140px;height:auto; overflow:auto">--%>
+<%--    <div class="card-header">당첨된 번호</div>--%>
+<%--    <div class="card-body" id="popup_layer_txt">--%>
+<%--    </div>--%>
+<%--</div>--%>

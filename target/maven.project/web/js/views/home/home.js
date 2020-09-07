@@ -132,40 +132,38 @@ fn_lotto_cal = function(){
 
 function fn_layer_popup(prize){
 
+    var pop =$("#poppop").val();
 
-    // if(prize==1){
-    //     $("#popInput").val($("#prizeNo0").val());
-    // }else if(prize==2){
-    //     $("#popInput").val($("#prizeNo1").val());
-    // }else if(prize==3){
-    //     $("#popInput").val($("#prizeNo2").val());
-    // }else if(prize==4){
-    //     $("#popInput").val($("#prizeNo3").val());
-    // }else if(prize==5){
-    //     $("#popInput").val($("#prizeNo4").val());
-    // }
+    if(pop=="N"){
+        if(prize==1){
+            $("#popup_layer").text($("#prizeNo0").val());
+        }else if(prize==2){
+            $("#popup_layer").text($("#prizeNo1").val());
+        }else if(prize==3){
+            $("#popup_layer").text($("#prizeNo2").val());
+        }else if(prize==4){
+            $("#popup_layer").text($("#prizeNo3").val());
+        }else if(prize==5){
+            $("#popup_layer").text($("#prizeNo4").val());
+        }
 
-    if(prize==1){
-        $("#popup_layer").text($("#prizeNo0").val());
-    }else if(prize==2){
-        $("#popup_layer").text($("#prizeNo1").val());
-    }else if(prize==3){
-        $("#popup_layer").text($("#prizeNo2").val());
-    }else if(prize==4){
-        $("#popup_layer").text($("#prizeNo3").val());
-    }else if(prize==5){
-        $("#popup_layer").text($("#prizeNo4").val());
+        var _x = event.clientX + document.body.scrollLeft;
+        var _y = event.clientY + document.body.scrollTop;
+        var layer = document.getElementById("popup_layer");
+
+        if(_x < 0) _x = 0;
+        if(_y < 0) _y = 0;
+
+        layer.style.left = _x+"px";
+        layer.style.top = _y+"px";
+
+        $("#poppop").val("Y");
+
+        layer.style.visibility="visible";
+    }else{
+
+        $("#poppop").val("N");
+        var layer = document.getElementById("popup_layer");
+        layer.style.visibility="hidden";
     }
-
-    var _x = event.clientX + document.body.scrollLeft; //마우스로 선택한곳의 x축(화면에서 좌측으로부터의 거리)를 얻는다.
-    var _y = event.clientY + document.body.scrollTop; //마우스로 선택한곳의 y축(화면에서 상단으로부터의 거리)를 얻는다.
-    var layer = document.getElementById("popup_layer");
-
-    if(_x < 0) _x = 0; //마우스로 선택한 위치의 값이 -값이면 0으로 초기화. (화면은 0,0으로 시작한다.)
-    if(_y < 0) _y = 0; //마우스로 선택한 위치의 값이 -값이면 0으로 초기화. (화면은 0,0으로 시작한다.)
-
-    layer.style.left = _x+"px"; //레이어팝업의 좌측으로부터의 거리값을 마우스로 클릭한곳의 위치값으로 변경.
-    layer.style.top = _y+"px"; //레이어팝업의 상단으로부터의 거리값을 마우스로 클릭한곳의 위치값으로 변경.
-
-    layer.style.visibility="visible";
 }
