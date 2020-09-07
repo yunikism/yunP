@@ -13,10 +13,6 @@
 <div>
     <div style="margin-top:15px;">
         <h2>제&nbsp;${drwNo}&nbsp;회 Lotto 당첨번호</h2>
-<%--        <h4>추첨일자 : ${drwNoDate} / 1등 당첨자 수 : ${firstPrzwnerCo} 명 / 1등 당첨금액 : <fmt:formatNumber value="${firstWinamnt}" pattern="#,###"/> 원</h4>--%>
-        <h4>추첨일자 : ${drwNoDate}</h4>
-        <h4>1등 당첨자 수 : ${firstPrzwnerCo} 명</h4>
-        <h4>1등 당첨금액 : <fmt:formatNumber value="${firstWinamnt}" pattern="#,###"/> 원</h4>
     </div>
     <input type="hidden" id="drwtNoArr1" name="drwtNoArr1" value="${drwtNoArr[1]}">
     <input type="hidden" id="drwtNoArr2" name="drwtNoArr2" value="${drwtNoArr[2]}">
@@ -149,23 +145,38 @@
     </div>
     <br>
     <br>
-    <form id="form" method="post" action="">
-    <div style="margin-top:50px;">
-        <h5>로또 구매 시뮬레이션</h5>
-        <input type="text" class="form-control" placeholder="구입할금액" id="lottoBuy" style="width: 300px; float:left;margin-right:1px;" pattern="#,###" >
-        <small class="text-muted" style="float:left;margin-right:10px;">원</small>
-        <button type="button" class="btn btn-primary" onclick="fn_lotto_cal()" style="float:left;">구입하기</button>
-        <br>
-        <br>
-    </div>
-    </form>
-<%--    <br>--%>
-<%--    <br>--%>
-<%--    <div class="bs-docs-section" style="width: 400px">--%>
-<%--        <table class="table table-hover" id = "boardList" border = "1" style="text-align: center;"></table>--%>
-<%--    </div>--%>
-    <br>
-    <br>
-    <div class="view_con" id="view_con">
-    </div>
+        <div class="bs-docs-section" style="margin-left: 50px">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th scope="col">등수</th>
+                    <th scope="col">당첨횟수</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-secondary">
+                        <td>1등</td>
+                        <td>${prize[0]}</td>
+                    </tr>
+<%--                    <tr class="table-primary">--%>
+                    <tr class="table-secondary">
+                        <td>2등</td>
+                        <td>${prize[1]}</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>3등</td>
+                        <td>${prize[2]}</td>
+                    </tr>
+<%--                    <tr class="table-primary">--%>
+                    <tr class="table-secondary">
+                        <td>4등</td>
+                        <td>${prize[3]}</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <td>5등</td>
+                        <td>${prize[4]}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </div>

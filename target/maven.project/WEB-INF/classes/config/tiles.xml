@@ -17,6 +17,12 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer/defaultFooter.jsp"></put-attribute>
 	</definition>
 
+	<!-- ajax 템플릿 -->
+	<definition name="ajaxLayout" template="/WEB-INF/views/layout/template/ajaxLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+
 <!--	&lt;!&ndash; 상품 Layout  템플릿 &ndash;&gt;-->
 <!--	<definition name="viewLayout" template="/WEB-INF/view/layout/template/defaultLayout.jsp">-->
 <!--		<put-attribute name="header" value="/WEB-INF/view/layout/header/defaultHeader.jsp"></put-attribute>-->
