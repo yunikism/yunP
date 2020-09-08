@@ -200,11 +200,12 @@ public class AdminController {
 
             if(cont==5){
                 for(int s =0;s<6;s++){
-                    if (picked[s] == bnusNo) {
+                    if (picked[s].equals(bnusNo)) {
                         second = "Y";
                     }
                 }
             }
+//            System.out.println("second :  "+ second + " / bnusNo : " + bnusNo );
             if(cont==6){
                 prize[0] = prize[0] + 1 ;
 

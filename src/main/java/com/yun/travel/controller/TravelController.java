@@ -46,6 +46,11 @@ public class TravelController {
         return "travel/love";
     }
 
+    @RequestMapping(value  = "/travel/map.do")
+    public String moveMap(ModelMap modelmap) {
+
+        return "travel/map";
+    }
 
 
 }

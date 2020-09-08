@@ -5,6 +5,9 @@
 	<a class="nav-link" href="/home/home.do">Home <span class="sr-only">(current)</span></a>
 </li>
 <li class="nav-item">
+	<a class="nav-link" href="/travel/map.do">map</a>
+</li>
+<li class="nav-item">
 	<a class="nav-link" href="/travel/mongol.do">mongol</a>
 </li>
 <li class="nav-item">
