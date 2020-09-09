@@ -37,9 +37,9 @@
 
 </head>
     <body>
-        <div id="page">
+        <div  id="page">
             <tiles:insertAttribute name="header"></tiles:insertAttribute>
-            <div id="body">
+            <div  id="body">
 <%--                <tiles:insertAttribute name="left"></tiles:insertAttribute>--%>
                 <tiles:insertAttribute name="body"></tiles:insertAttribute>
             </div>

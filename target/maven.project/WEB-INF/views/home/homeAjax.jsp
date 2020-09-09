@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 
 <div class="section">
-    <div class="bs-docs-section" style="width: 1000px">
+    <div class="bs-docs-section" style="width: 90%">
         <input type="hidden" id="prizeNo0" name="prizeNo0" value="${prizeNo[0]}">
         <input type="hidden" id="prizeNo1" name="prizeNo1" value="${prizeNo[1]}">
         <input type="hidden" id="prizeNo2" name="prizeNo2" value="${prizeNo[2]}">
